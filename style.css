@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+}
+.header-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 6vw;
+}
+.menu-mobile {
+    background-color: #000;
+    width: 25vw;
+    height: 6vw;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+span{
+    width: 4vw;
+    height: 0.6vw;
+    background-color: #fff;
+}
+.header-top h1 {
+    text-transform: capitalize;
+    font-size:2.1vw ;
+    width: 35vw;
+    position: fixed;
+    left: 7.7vw;
+}
+.header-top nav {
+    position: fixed;
+    right: 6vw;
+    
+}
+
+.header-top ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 31vw;
+}
+.header-top li {
+    list-style: none;
+    color: #B7B7B7;
+    font-size: 1.06vw;
+    text-transform: capitalize;
+    width: 8vw;
+    text-align: center;
+    
+}
+a{
+    color: inherit;
+}
+.header-top a:hover{
+    font-weight: 900;
+    font-size: 1.3vw;
+    color: #000;
+}
+.header-bottom{
+    background-image: url(assets/laranja\ azul\ recorte.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-bottom h2 {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 4.1vw;
+    width: 84vw;
+}
+.header-bottom a {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+    align-self: flex-start;
+    width: 30vw;
+    text-align: center;
+    font-size:1.8vw ;
+    font-weight: 300;
+}
+@media (max-width:769px){
+    .header-top h1 {
+        position: unset;
+        font-size: 4.5vw;
+        
+    }
+    .header-top nav {
+        display: none;
+    }
+    .header-top .menu-mobile {
+        display: flex;
+        position: absolute;
+        left: 0;
+        
+    }
+    .header-bottom{
+        height: 97vh;
+        background-size: cover;
+        background-position: 85% 0% ;
+        justify-content: flex-end;
+    }
+    .header-bottom h2 {
+        font-size: 15vw;
+    }
+    .header-bottom a{
+        font-size: 5vw;
+        width: 59vw;
+    }
+}
+main {
+    width: 86vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3.5vw;
+}
+main img {
+    margin-bottom: 0.75vw;
+    width: 20.7vw;
+    z-index: 10;
+}
+@media (max-width:769px){
+    main{
+        width: 80vw;
+        flex-direction: column;
+        margin-top: 19vw;
+    }
+    main img {
+        width: 100%;
+        margin-bottom: 9vw;
+    }
+    .img1{
+        order: 1;
+    }
+    .img2{
+        order: 2;
+    }
+    .img3{
+        order: 3;
+    }
+    .img4{
+        order: 4;
+    }
+    .img5{
+        order: 5;
+    }
+    .img6{
+        order: 6;
+    }
+    .img7{
+        order: 7;
+    }
+    .img8{
+        order: 8;
+    }
+    .img9{
+        order: 9;
+    }
+    .img10{
+        order: 10;
+    }
+    .img11{
+        order: 11;
+    }
+    .img12{
+        order: 12;
+    }
+}
+footer{
+    background-color: #F6F6F6;
+}
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+    width: 66vw;
+    height: 6.5vw ;
+    align-items: center;
+    margin-left: 7vw;
+}
+.social-media{
+    width: 22vw;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 4vw;
+}
+.social-media img {
+    width: 2.2vw;
+}
+.social-media .social-media-fb{
+    width: 1vw;
+}
+.copyright{
+    width: 5vw;
+}
+.copyright p {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 1.1vw;
+}
+.final-text p {
+    text-transform: capitalize;
+    font-size: 0.82vw;
+}
+@media (max-width:769px){
+    footer{
+        background-color:#fff;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-box{
+        flex-direction: column;
+        width: 80vw;
+        margin-left: 0;
+    }
+    .social-media{
+        background-color: #7FDBD4;
+        width: 100%;
+        margin-right: 0;
+        height: 7vh;
+    }
+    .social-media img {
+        width: 7vw;
+        
+    }
+    .social-media .social-media-fb{
+        width: 3.5vw;
+    }
+    
+}
