@@ -11,6 +11,9 @@
     align-items: center;
     justify-content: space-around;
     height: 10vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #fff;
 }
 .menu-mobile {
     background-color: #000;
@@ -64,9 +67,6 @@ span{
     height: 0.4vw;
     background-color: #fff;
 }
-.span2{
-    
-}
 .menu-mobile-navigation{
     position: absolute;
     width: 50vw;
@@ -77,13 +77,8 @@ span{
     text-transform: capitalize;
     font-size:2.1vw ;
     width: 35vw;
-    position: fixed;
-    left: 7.7vw;
 }
 .header-top nav {
-    position: fixed;
-    right: 6vw;
-    
 }
 
 .header-top ul {
@@ -139,6 +134,7 @@ a{
 @media (max-width:769px){
     .header-top{
         height: 6vh;
+        position: unset;
     }
     .header-top h1 {
         position: unset;
@@ -180,7 +176,6 @@ main {
 main img {
     margin-bottom: 0.75vw;
     width: 20.7vw;
-    z-index: 10;
 }
 @media (max-width:769px){
     main{
