@@ -10,21 +10,68 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 6vw;
+    height: 10vh;
 }
 .menu-mobile {
     background-color: #000;
     width: 25vw;
-    height: 6vw;
+    height: 6vh;
     display: none;
+    justify-content: center;
+    align-items: center;
+}
+.menu-mobile-click {
+    width: 4vw;
+    height:3vw ;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+
 }
+.menu-mobile-navigation {
+    display: none;
+}
+.menu-mobile-click:hover .span2{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-image:linear-gradient(90deg, #fff,#007BCB) ;
+}
+.menu-mobile-click:hover .menu-mobile-navigation {
+    display: flex;
+}
+.header-top .menu-mobile-click .menu-mobile-navigation ul {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.header-top .menu-mobile-click .menu-mobile-navigation li {
+    font-size: 7vw;
+    width: unset;
+    color: #000;
+    border-bottom: solid #000;
+}
+.header-top .menu-mobile-click .menu-mobile-navigation a:hover{
+    font-size: unset;
+    font-weight: unset;
+    border: solid black;
+} 
 span{
     width: 4vw;
-    height: 0.6vw;
+    height: 0.4vw;
     background-color: #fff;
+}
+.span2{
+    
+}
+.menu-mobile-navigation{
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    top: 0;
 }
 .header-top h1 {
     text-transform: capitalize;
@@ -90,6 +137,9 @@ a{
     font-weight: 300;
 }
 @media (max-width:769px){
+    .header-top{
+        height: 6vh;
+    }
     .header-top h1 {
         position: unset;
         font-size: 4.5vw;
@@ -105,7 +155,7 @@ a{
         
     }
     .header-bottom{
-        height: 97vh;
+        height: 94vh;
         background-size: cover;
         background-position: 85% 0% ;
         justify-content: flex-end;
@@ -202,17 +252,39 @@ footer{
 .social-media .social-media-fb{
     width: 1vw;
 }
-.copyright{
-    width: 5vw;
-}
+
 .copyright p {
     text-transform: capitalize;
     font-weight: 800;
     font-size: 1.1vw;
 }
+.copy-final-text{
+    display: flex;
+    align-items: center;
+}
+.final-text{
+    margin-left: 1vw;
+}
 .final-text p {
     text-transform: capitalize;
     font-size: 0.82vw;
+}
+.topo{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.topo button{
+    color: #707070;
+    text-transform: capitalize;
+    font-size: 2.5vw;
+    background-color: #333333;
+    width: 11vw;
+    height: 4vw;
+    border-style: none;
+}
+.topo button:active{
+    transform: scale(0.99);
 }
 @media (max-width:769px){
     footer{
@@ -230,6 +302,7 @@ footer{
         width: 100%;
         margin-right: 0;
         height: 7vh;
+        justify-content: space-evenly;
     }
     .social-media img {
         width: 7vw;
@@ -237,6 +310,39 @@ footer{
     }
     .social-media .social-media-fb{
         width: 3.5vw;
+    }
+    .copy-final{
+        display: flex;
+        justify-content: space-between;
+        width: 80vw;
+        align-items: center;
+        position: relative;
+        margin-top: 3vw;
+    }
+    .copy-final::after{
+        content: "";
+        width: 80vw;
+        height: 3vw;
+        position: absolute;
+        bottom: -4vw;
+        
+    }
+    .copy-final-text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyright p {
+        font-size: 2.5vw;
+    }
+    .final-text{
+        margin: 0;
+    }
+    .final-text p {
+        font-size: 2vw;
+        width: 50%;
+    }
+    .topo{
+        display: flex;
     }
     
 }
